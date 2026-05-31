@@ -8,10 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* ... весь ваш CSS без изменений ... */
-    /* (я скопирую его из вашего сообщения, чтобы не потерять) */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --black: #111111;
       --white: #ffffff;
@@ -102,7 +98,7 @@ nav {
     .page { display: none; }
     .page.active { display: block; }
 
-    /* ============ HOME PAGE ============ */
+    /*HOME PAGE*/
     .hero-img {
       width: calc(100% + 160px);
       margin-left: -80px;
@@ -343,7 +339,7 @@ nav {
       align-self: center;
     }
 
-/* Футер – текст "Мы делаем мебель..." сделан чёрным */
+/* Футер – текст "Мы делаем мебель..." */
 footer {
   width: calc(100% + 160px);
   margin-left: -80px;
@@ -358,12 +354,11 @@ footer {
   grid-template-columns: 220px 200px 180px 220px 160px;
   gap: 20px;
 }
-/* ИЗМЕНЕНО: текст в футере "Мы делаем мебель..." стал чёрным */
 .footer-brand p {
   color: #000000;
 }  
 
-/* ============ CATALOG PAGE ============ */
+/*CATALOG PAGE*/
 .catalog-hero {
   width: 100%;
   height: auto;
@@ -416,13 +411,13 @@ footer {
   justify-content: flex-start;
   text-align: left;
 }
-/* Столы – правый край (используем класс, чтобы быть точным) */
+/* Столы – правый край */
 .title-tables {
   justify-content: flex-end;
   text-align: right;
 }
 
-    /* ============ PRODUCT PAGE ============ */
+    /* PRODUCT PAGE */
     #page-product {
       padding-left: 80px;
       padding-right: 80px;
@@ -513,7 +508,7 @@ footer {
     .prod-full-img:first-of-type { margin-bottom: 40px; }
     .prod-full-img:last-of-type { margin-bottom: 40px; }
 
-    /* ============ CART PAGE ============ */
+    /* CART PAGE */
     .cart-container {
       max-width: 800px;
       margin: 0 auto;
@@ -616,7 +611,7 @@ footer {
     }
     .btn-order:hover { opacity: .85; }
 
-    /* ============ ABOUT PAGE ============ */
+    /* ABOUT PAGE */
 #page-about {
   padding-left: 80px;
   padding-right: 80px;
@@ -708,7 +703,7 @@ footer {
       background: #ddd;
     }
 
-    /* ============ DELIVERY PAGE ============ */
+    /* DELIVERY PAGE */
 #page-delivery {
   padding-left: 80px;
   padding-right: 80px;
@@ -955,7 +950,7 @@ footer {
   width: calc(100% + 160px);
   margin-left: -80px;
 }
-/* ============ FOOTER ============ */
+/* FOOTER */
   footer {
     background: var(--footer-bg);
     padding: 50px 80px 40px;
@@ -1291,7 +1286,6 @@ footer {
 
 <!-- ==================== PRODUCT PAGE ==================== -->
 <div id="page-product" class="page">
-  <!-- ... (код страницы товара без изменений) ... -->
   <div class="product-hero">
     <div class="product-info"><h1>Кресло 01</h1><div class="product-price">54 000 р.</div><button class="btn-primary" onclick="showPage('cart')">Добавить в корзину</button></div>
     <img class="product-hero-img" src="images/Group 2.png" alt="Кресло 01">
@@ -1317,7 +1311,6 @@ footer {
 
 <!-- ==================== CART PAGE ==================== -->
 <div id="page-cart" class="page">
-  <!-- ... (код корзины без изменений) ... -->
   <div class="cart-container">
     <h1>Ваш заказ</h1>
     <div class="cart-item"><img src="images/Group 2.png" alt="Кресло 01"><div><div class="cart-item-name">Кресло 01</div><div class="cart-item-color">Цвет: оливковый</div></div><div class="qty-ctrl"><button>−</button><span>1</span><button>+</button></div><div class="cart-item-price">54 000 р.</div><button class="remove-btn">×</button></div>
@@ -1343,7 +1336,6 @@ footer {
 
 <!-- ==================== ABOUT PAGE ==================== -->
 <div id="page-about" class="page">
-  <!-- ... (код страницы о нас без изменений) ... -->
   <div class="about-section"><img src="images/about.png" alt="О нас"><div class="about-text"><p>Woodland специализируется <br> на дизайне и изготовлении <br> экологичной деревянной мебели <br> и предметов интерьера ручной <br> работы, с акцентом <br> на натуральность, долговечность <br> и уникальность. Мы верим, <br> что каждый элемент интерьера <br> должен не только выполнять <br> свою функциональную роль, <br> но и быть эстетически <br> привлекательным, создавая <br> уютную атмосферу в вашем доме.</p></div></div>
   <div class="about-section reverse"><div class="about-text"><p>Минималистичный дизайн — это наша <br> философия. Мы сосредотачиваемся на чистых <br> линиях и простых формах, что позволяет нашей <br> мебели легко вписываться в любой интерьер — <br> от современных до классических. Наша цель — <br> создать функциональные и стильные решения, <br> которые будут радовать вас каждый день.</p></div><img src="images/about1.png" alt="Дизайн"></div>
   <img class="about-full-img" src="images/about2.png" alt="Производство">
@@ -1365,7 +1357,6 @@ footer {
 
 <!-- ==================== DELIVERY PAGE ==================== -->
 <div id="page-delivery" class="page">
-  <!-- ... (код страницы доставки без изменений) ... -->
   <div class="delivery-hero"><div class="delivery-hero-text"><h1>Доставка и сервис качественной мебели</h1><p>Каждое изделие нашей мастерской уникально. Поэтому и путь к вам оно проходит по индивидуальному сценарию — без компромиссов в качестве и с полным вниманием к деталям.</p></div><img class="delivery-hero-img" src="images/delivery.png" alt="Доставка мебели"></div>
   <div class="delivery-content">
     <h2 class="delivery-section-title">Варианты доставки</h2>
